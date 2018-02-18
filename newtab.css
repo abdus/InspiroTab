@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+
+
+#body{
+    margin: 0px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center; 
+    height: 100vh;
+}
+#body-wrapper{
+    /*background: rgba(255, 255, 255, 0.534);*/
+    min-height: 100vh;
+}
+
+#time-container{
+    vertical-align: bottom;
+    text-align: right;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+#salutation{
+    text-align: right;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 5em;
+    font-weight: 700;
+}
+#local-time-wrapper{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 7em;
+}
+#local-day{
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(255, 0, 64);
+}
+#daily-quote-wrapper{
+    padding-right: 10px;
+    text-align: center;
+    font-size:2em;
+    font-family: 'Courgette', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+#quote-author{
+    color: rgb(128, 215, 196);
+    font-size: 1.2em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input{
+    background: unset;
+    border: unset;
+    border-bottom: 1px solid white;
+    font-size: .5em;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(255, 0, 64);
+}
+input:focus{
+    background: unset;
+    outline-width: 0;
+}
+#daily-items{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 28vh;
+}
+.daily-header{
+    color: red;
+    font-size: 1.5em;
+}
+hr{
+    border: 1px solid red;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+}
+li{
+    list-style-type: disc;
+    padding: 5px;
+    margin: 0px;
+    color: red;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
