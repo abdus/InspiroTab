@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
 @import url('https://fonts.googleapis.com/css?family=Courgette');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300');
-@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 
@@ -31,17 +31,18 @@
 
 #salutation{
     text-align: right;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Cookie', cursive;
     color: white;
-    font-size: 5em;
+    padding: 20px;
+    font-size: 4em;
     font-weight: 700;
 }
 #local-time-wrapper{
     text-align: center;
     color: white;
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 7em;
+    font-family: 'Comfortaa', cursive;
+    font-size: 6em;
 }
 #local-day{
     font-family: 'Abril Fatface', cursive;
@@ -105,7 +106,44 @@ a{
 a:hover{
     color: red;
 }
-
+#searchbar {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 40%;
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+}
+form {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid rgb(243, 14, 83);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.37);
+    color: white;
+}
+form input[type="text"]{
+    width: 75%;
+    margin: auto;
+    border: unset;
+    font-weight: 300;
+    padding: 10px 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+}
+form button[type="submit"]{
+    background: unset;
+    border: unset;
+    width: 10%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: .7em;
+    font-weight: 900;
+    color: rgb(243, 14, 83);
+    outline: none;
+    cursor: pointer;
+}
 ::-webkit-scrollbar{
     display: none;
 }

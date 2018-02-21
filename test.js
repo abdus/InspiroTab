@@ -8,7 +8,12 @@ const get12HoursTime = (timeHours) => {
 
 	//if time is greater then 12. i.e. 13+ 
 	if (timeHours > 12) {
-		return timeHours - 12;
+		let time0 = timeHours - 12;
+		if (time0 < 10) {
+			return "0" + time0;
+		} else {
+			return time0;
+		}
 	} else {
 		return timeHours;
 	}
@@ -48,6 +53,7 @@ const clock = () => {
 
 // start of calling  
 
+// for first time calling without any delay. (if removed, time will be displayed with a delay of 1 sec)
 let time = new Date();
 let timeHours = time.getHours();
 let timeHours12 = get12HoursTime(timeHours);		// refer to function
